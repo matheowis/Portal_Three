@@ -1,5 +1,5 @@
 # Portal_Three
-The idea is to recreate portal from portal game, 
+The idea is to recreate portals from portal game, 
 
 # Main resources:
 
