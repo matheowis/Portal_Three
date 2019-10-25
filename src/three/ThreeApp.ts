@@ -1,6 +1,6 @@
 import { Mesh, BoxGeometry, Object3D } from 'three';
 import WebGLBody from './WebGLBody';
-import Character from './components/Character';
+import Ground from './components/Ground';
 
 export function initiateThree() {
   const container = document.getElementById('canvasCointainer');
@@ -8,8 +8,10 @@ export function initiateThree() {
 
   const cubeGeo = new BoxGeometry(0.5, 0.5, 0.5);
   const cubeMesh = new Mesh(cubeGeo);
-  const character = new Character();
+  cubeMesh.position.z = -5;
+  const ground = new Ground({ size: 50 });
 
-  webGlBody.add(cubeMesh, character);
+
+  webGlBody.add(cubeMesh, ground);
 
 }

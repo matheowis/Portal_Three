@@ -9,6 +9,7 @@ class Ground extends Mesh {
     super();
     const { size } = props;
     this.geometry = new PlaneGeometry(size, size);
+    this.geometry.rotateX(-Math.PI / 2);
   }
 }
 
